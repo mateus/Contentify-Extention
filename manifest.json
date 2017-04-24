@@ -1,17 +1,30 @@
 {
   "manifest_version": 2,
   "name": "Contentify",
-  "version": "0.0.1",
-
+  "version": "1.0.0",
+  "description": "Contentify it!",
+  "icons": {
+    "16": "icons/icon16.png",
+     "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "browser_action": {
     "default_icon": {
-      "38": "icon.png"
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"
     },
-    "default_title": "Contentify",
-    "default_popup": "popup.html"
+    "default_title": "Contentify"
   },
-
-  "author": ["Mateus Ferreira Silva", "Kai Daniels"],
-
+  "background": {
+    "scripts": [
+      "redirect.js"
+    ]
+  },
+  "homepage_url": "https://contentify.io/",
+  "author": [
+    "Mateus Ferreira Silva",
+    "Kai Daniels",
+    "Maxime Orefice"
+  ],
   "permissions": ["tabs"]
 }
